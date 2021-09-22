@@ -1,0 +1,33 @@
+.navbarr{
+  list-style-type: none;
+  background-color: #ffccd3;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#barrita{
+  float: left;
+}
+
+.letras{
+  padding-left: 15px;
+  display: block;
+  color:rgba(171, 48, 83, 100);
+  text-align: center;
+  padding: 15px;
+  padding-top: 35px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.imagennav{
+  width: 100px;
+}
+
+.iconoizq{
+  float: right;
+  padding-right: 40px;
+  padding-top: 15px;
+  width: 110px;
+}
