@@ -6,23 +6,37 @@ margin-bottom: 200%;
 }
 
 .boxUno{
-border: solid #FC5162;
-background-color: #FFCCD3;
-width: 160px;
-height: 65px;
-font-family: 'Dancing Script', cursive;
-font-size: 50px;
+position: relative;
+top: 20px;
+left: 200px;
+border-radius: 10px;
+background-color: #FC5162;
+width: 165px;
+height: 70px;
+color: antiquewhite;
+padding: 5px;
+}
+
+#boxUnoFont{
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
 }
 
 /* Box styles */
 .myBox {
-border: solid #FC5162;
+border-width: 2px;
+border-radius: 10px;
 background-color: #FFCCD3;
-padding: 5px;
-font: 24px/36px sans-serif;
+padding: 30px;
+padding-top: 40px;
 width: 600px;
 height: 400px;
 overflow: scroll;
+}
+
+#myBoxFont{
+  font: 24px/36px sans-serif;
+  color: #634646;
 }
 
 /* Scrollbar styles */
@@ -32,15 +46,40 @@ height: 0px;
 }
 
 ::-webkit-scrollbar-track {
-border: 1px solid #AB3053;
 border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FCA9B4;  
+  background: #FC5162;  
   border-radius: 10px;
   }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #634646;  
+background: #AB3053;  
+}
+
+
+/*Piede página*/
+
+.footer {
+  background-color: #634646;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: antiquewhite;
+}
+
+.footerText{
+  position: absolute;
+  top:40%;
+  left: 1%;
+  font-family: lora;
+}
+
+.footerTextDrcha{
+  position: absolute;
+  top:40%;
+  right: 1%;
+  font-family: lora;
 }
