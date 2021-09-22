@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+/* Force scrollbars onto browser window */
+body {
+margin-bottom: 200%;
+}
+
+.boxUno{
+border: solid #FC5162;
+background-color: #FFCCD3;
+width: 160px;
+height: 65px;
+font-family: 'Dancing Script', cursive;
+font-size: 50px;
+}
+
+/* Box styles */
+.myBox {
+border: solid #FC5162;
+background-color: #FFCCD3;
+padding: 5px;
+font: 24px/36px sans-serif;
+width: 600px;
+height: 400px;
+overflow: scroll;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar{
+width: 8px;
+height: 0px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid #AB3053;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FCA9B4;  
+  border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+background: #634646;  
+}
