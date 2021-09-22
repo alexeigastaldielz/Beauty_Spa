@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html5>
+<html lang="en">
 <head>
-    <title>Mi Página web</title>
-    <link rel="stylesheet" type="text/css" href="envio.css"></li>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="envio.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
+    
+    <div class="content">
 
-<div class="row">
-   <div id="templatemo_contact" class="col-md-4 gallery-contact">
-</div>
-   <div class="col-md-8 templatemo_contactform">
-   <div class="templatemo_contacttitle">CONTACTO</div>
-    <div class="templatemo_sub_contacttitle">Si requieres un subtitulo escribelo aquí</div>
-        <p> Escribe aquí el mensaje que quieres presentar si es necesario.</p>
+        <h1 class="logo">Contáctanos </h1>
 
-   <form action="enviar.php" method="post">
-                        <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
-                        <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
-                        <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
-                        <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
-                        <div class="clear"></div>
-                            <div class="col-md-8"> 
-                                <button type="submit" class="btn btn-primary">ENVIAR </button>
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contacts-form">
+                <h3>Contáctanos</h3>
+                <form method="POST" class="contact-form">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input class="name" type="text" placeholder="name" required/>
+                    </p>
+                    <p>
+                        <label>Correo electrónico</label>
+                        <input class="email" type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número telefónico</label>
+                        <input type="tel" name="phone">
+                    </p>
+                   
+                    <p class="block">
+                       <label for="">Mensaje</label> 
+                        <textarea 
+                        class="messaje"
+                        name=""
+                         rows="3"
+                         placeholder="messaje"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Send
+                        </button>
+                    </p>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Aldea escondida entre las hojas</li>
+                    <li><i class="fas fa-phone"></i> 3222638841</li>
+                    <li><i class="fas fa-envelope-open-text"></i> rafa22524@gmail.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>beautyspa.com</p>
+            </div>
+        </div>
+
     </div>
-    </form>
-    </div>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
