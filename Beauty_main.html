@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_nsfB75HsHb3gAeJ6RzBYc");
+})();
+</script>
 </head>
 <body>
     
@@ -24,31 +31,25 @@
                 <h3>Contáctanos</h3>
                 <form method="POST" class="contact-form">
                     <p>
-                        <label  for= "">Nombre completo</label>
-                        <input class="name" type="text" placeholder="name" required/>
+                        <label>Nombre completo</label>
+                        <input type="text" id="tonName"  placeholder="Enter to name" >
                     </p>
                     <p>
                         <label  for= "">Correo electrónico</label>
-                        <input class="email" type="email" placeholder="email">
+                        <input type="text" id="email"  placeholder="Enter tp email" >
                     </p>
-                    <p>
-                        <label  for= "">Número telefónico</label>
-                        <input type="tel" name="phone">
-                    </p>
+                
                     <p class="block">
-                    <label for="">Mensaje<label> 
+                    <label for="">Mensaje</label> 
                         <textarea 
-                        class="messaje"
-                        name=""
+                        id="messages"
                         rows="3"
-                        placeholder="messaje"
+                        placeholder="message"
                         required>
                     </textarea>
-                    </p>
-                    <!--<p class="block">-->
-                        <button class="block" type="submit">
-                            Send
-                        </button>
+                </p>
+                    <p class="block">
+                        <button onclick='sendMail()'  >Send </button>
                     </p>
                 </form>
             </div>
@@ -66,8 +67,9 @@
         </div>
 
     </div>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+ 
 <script src="app.js"></script>
+
+
 </body>
 </html>
