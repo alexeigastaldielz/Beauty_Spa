@@ -83,3 +83,66 @@ background: #AB3053;
   right: 1%;
   font-family: lora;
 }
+
+
+/*box size with media queries*/
+
+@media screen and (min-width: 524px) and (max-width: 700px){
+  .boxUno{
+    width: 150px;
+    left: 180px;
+  }
+
+  #boxUnoFont{
+    font-size: 45px;
+  }
+
+  .myBox{
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 477px) and (max-width: 520px){
+  .boxUno{
+    width: 140px;
+    left: 170px;
+  }
+
+  #boxUnoFont{
+    font-size: 40px;
+  }
+
+  .myBox{
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 475px){
+  .boxUno{
+    width: 140px;
+    left: 80px;
+  }
+
+  #boxUnoFont{
+    font-size: 40px;
+  }
+
+  .myBox{
+    width: 290px;
+  }
+
+  .footer{
+    height: 100px;
+  }
+
+  .footerText {
+    top: 20px;
+  }
+
+  .footerTextDrcha{
+    top: 50px;
+    left: 1%;
+  }
+}
+
+/*box size with media queries*/
