@@ -1,0 +1,20 @@
+.tamañologo{
+  width: 50%;
+  height: 50%;
+}
+
+.imagesposition{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  padding: 3%;
+  
+}
+
+.redesposition{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
