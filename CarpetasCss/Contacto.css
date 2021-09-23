@@ -18,3 +18,155 @@
   align-items: center;
   
 }
+
+/*Estilos para el cuadro de nosotros*/
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap");
+
+/* Force scrollbars onto browser window */
+body {
+margin-bottom: 200%;
+}
+
+.boxUno{
+position: relative;
+top: 20px;
+left: 200px;
+border-radius: 10px;
+background-color: #FC5162;
+width: 165px;
+height: 70px;
+color: antiquewhite;
+padding: 10px;
+}
+
+#boxUnoFont{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* Box styles */
+.myBox {
+border-width: 2px;
+border-radius: 10px;
+background-color: #FFCCD3;
+padding: 30px;
+padding-top: 40px;
+width: 600px;
+height: 400px;
+overflow: scroll;
+}
+
+#myBoxFont{
+  font: 24px/36px sans-serif;
+  color: #634646;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar{
+width: 8px;
+height: 0px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FC5162;  
+  border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+background: #AB3053;  
+}
+
+
+/*Pie de página*/
+
+.footer {
+  background-color: #634646;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: antiquewhite;
+}
+
+.footerText{
+  position: absolute;
+  top:40%;
+  left: 1%;
+  font-family: lora;
+}
+
+.footerTextDrcha{
+  position: absolute;
+  top:40%;
+  right: 1%;
+  font-family: lora;
+}
+
+
+/*box size with media queries*/
+
+@media screen and (min-width: 524px) and (max-width: 700px){
+  .boxUno{
+    width: 150px;
+    left: 180px;
+  }
+
+  #boxUnoFont{
+    font-size: 45px;
+  }
+
+  .myBox{
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 477px) and (max-width: 520px){
+  .boxUno{
+    width: 140px;
+    left: 170px;
+  }
+
+  #boxUnoFont{
+    font-size: 40px;
+  }
+
+  .myBox{
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 475px){
+  .boxUno{
+    width: 140px;
+    left: 80px;
+  }
+
+  #boxUnoFont{
+    font-size: 40px;
+  }
+
+  .myBox{
+    width: 290px;
+  }
+
+  .footer{
+    height: 100px;
+  }
+
+  .footerText {
+    top: 20px;
+  }
+
+  .footerTextDrcha{
+    top: 50px;
+    left: 1%;
+  }
+}
+
+/*box size with media queries*/
