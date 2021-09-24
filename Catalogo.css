@@ -2,15 +2,17 @@
   border: 1px black solid;
 }
 
+.tituloh1{
+  text-align: center;
+  color: #aa3053;
+
+}
+
 .tamañoimagenes{
-  max-width: 150px;
+  max-width: 100px;
   min-width: 50px;
 }
 
-.subtitulos{
-  color: #aa3053;
-  text-align: center;
-}
 
 .tituloprod{
   background-color: #fff4f8;
