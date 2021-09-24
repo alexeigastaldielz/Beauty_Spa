@@ -4,14 +4,9 @@
 }
 /*CSS NavBar*/
 
-/*.nav-link{
-  color: #FADA5E;
-}*/
 body {
 
   background: linear-gradient(to bottom, white, #FFCCD3);
-
-  color: #fff;
   line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
   padding: 0 ;
