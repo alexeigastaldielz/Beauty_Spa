@@ -246,10 +246,14 @@ ul {
 }
 /*FIN DE CSS PARA FORMULARIO*/
 
-
+/* CSS DE LOGO IVAR PAGINA CONTACTO*/
 .tamañologo{
-  width: 50%;
-  height: 50%;
+  min-width: 30%;
+  max-width: 40%;
+}
+.tamañosredes{
+  min-width: 2%;
+  max-width: 6%;
 }
 
 .imagesposition{
@@ -267,7 +271,7 @@ ul {
   align-items: center;
   
 }
-
+/* CSS DE LOGO IVAR PAGINA CONTACTO*/
 /*Estilos para el cuadro de nosotros*/
 
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap");
