@@ -1,6 +1,6 @@
 //Código para enviar correos
 
-/*(function() {
+(function() {
   emailjs.init("user_nsfB75HsHb3gAeJ6RzBYc");
   })();
 
@@ -17,7 +17,7 @@ function sendMail(){
    };
 
   emailjs.send("service_l8t7c6q","template_74px0yb", contactParams).then (function(res){})
-}*/
+}
 
 //Código para la NavBar
 
