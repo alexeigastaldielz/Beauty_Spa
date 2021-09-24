@@ -8,8 +8,9 @@
   color: #FADA5E;
 }*/
 body {
-  background: #FCA9B4
-  ;
+
+  background: linear-gradient(to bottom, white, #FFCCD3);
+
   color: #fff;
   line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
@@ -285,7 +286,7 @@ ul {
   max-width: 40%;
   min-height: 30%;
 }
-
+/****************************TAMAÑOS LOGOS CONTATO IVAR*********************************************/
 .imagesposition{
   display: flex;
   justify-content: center;
@@ -306,6 +307,7 @@ ul {
   align-items: center;
   
 }
+/****************************TAMAÑOS LOGOS CONTATO IVAR*********************************************/
 
 /*Estilos para el cuadro de nosotros*/
 
