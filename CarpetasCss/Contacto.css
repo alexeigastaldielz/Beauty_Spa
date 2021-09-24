@@ -76,6 +76,10 @@ a {
   color: #AB3053;
 }
 
+.shoppingBag{
+  color: #d63031;
+}
+
 .nav-link:hover{
   color: #fff;
 }
@@ -284,9 +288,6 @@ ul {
 
 /* Force scrollbars onto browser window */
 
-.borde{
-  border: 5px black solid;
-}
 .boxUno{
 position: relative;
 top: 20px;
