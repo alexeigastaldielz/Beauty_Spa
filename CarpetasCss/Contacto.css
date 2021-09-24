@@ -1,26 +1,28 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/*CSS NavBar*/
 
 body {
-
   background: linear-gradient(to bottom, white, #FFCCD3);
   line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
   padding: 0 ;
 }
 
-/*Prueba de navbar */
+.linea {
+  border-top: 2px solid #634646;
+  height: 1px;
+  max-width: 400px;
+  padding: 0;
+  margin: 50px auto 0 auto;
+}
+
+/*CSS NavBar*/
 
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 li {
     list-style: none;
@@ -76,8 +78,12 @@ a {
   color: #AB3053;
 }
 
-.shoppingBag{
+.shoppingBag i{
   color: #d63031;
+  font-size: 30px;
+}
+.shoppingBag i:hover{
+  color: #fff;
 }
 
 .nav-link:hover{
@@ -134,11 +140,10 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }
 }
+
+
 /*INICIO DE CSS PARA FORMULARIO*/
 .content {
-  background: #FCA9B4
-  ;
-  color: #fff;
   line-height: 1.6;
   font-family: 'Quicksand', sans-serif;
   padding: 0 1.5em;
@@ -159,16 +164,12 @@ ul {
 .logo {
   text-align: center;
   font-size: 3em;
-}
-
-.logo span {
-  color: #000000;
+  color: #d63031;
 }
 
 .contact-wrapper {
   box-shadow: 0 0 20px;
-  color: #0f0c0c
-  ;
+  color: #634646;
 }
 
 .contact-wrapper > * {
@@ -206,13 +207,13 @@ ul {
   border: none;
   background: none;
   outline: 0;
-  color: rgb(0, 0, 0);
-  border-bottom: 1px solid #d63031;
+  color: #634646;
+  border-bottom: 1px solid #AB3053;
 }
 
 .contacts-form form button {
-  background: #AB3053
-  ;
+  background: #d63031;
+  color: antiquewhite;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -220,16 +221,16 @@ ul {
 
 .contacts-form form button:hover,
 .contacts-form form button:focus {
-  background: #585454;
-  color: rgb(197, 185, 185);
+  background:#AB3053;
+  color: antiquewhite;
   transition: background-color 1s ease-out;
   outline: 0;
 }
 
 /* CONTACT INFO */
 .contact-info {
-  background: #634646
-  ;
+  background: #634646;
+  color: antiquewhite;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
@@ -254,12 +255,17 @@ ul {
   .contact-info p {
       text-align: left;
   }
-}/*FIN DE CSS PARA FORMULARIO*/
+}
+
+/*FIN DE CSS PARA FORMULARIO*/
+
+/****************************TAMAÑOS LOGOS CONTATO IVAR*********************************************/
+
 .tamañologo{
   max-width: 300px;
   min-height: 100px;
 }
-/****************************TAMAÑOS LOGOS CONTATO IVAR*********************************************/
+
 .imagesposition{
   display: flex;
   justify-content: center;
@@ -286,36 +292,39 @@ ul {
 
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap");
 
-/* Force scrollbars onto browser window */
-
 .boxUno{
 position: relative;
-top: 20px;
-left: 200px;
+margin-left: auto;
+margin-right: auto;
+display: block;
 border-radius: 10px;
-background-color: #FC5162;
 width: 165px;
 height: 70px;
+background-color: #FC5162;
 color: antiquewhite;
 padding: 10px;
+}
+
+/* Box styles */
+.myBox {
+width: 600px;
+height: 400px; 
+margin-left: auto;
+margin-right: auto;
+margin-top: -20px;
+display: block;
+border-width: 2px;
+border-radius: 10px;
+background-color: #FFCCD3;
+padding: 30px;
+padding-top: 40px;
+overflow: scroll;
 }
 
 #boxUnoFont{
   font-family: 'Shippori Mincho', serif;
   font-size: 35px;
   text-align: center;
-}
-
-/* Box styles */
-.myBox {
-border-width: 2px;
-border-radius: 10px;
-background-color: #FFCCD3;
-padding: 30px;
-padding-top: 40px;
-width: 600px;
-height: 400px;
-overflow: scroll;
 }
 
 #myBoxFont{
@@ -358,18 +367,34 @@ background: #AB3053;
   position: absolute;
   top:40%;
   left: 1%;
-  font-family: lora;
 }
 
 .footerTextDrcha{
   position: absolute;
   top:40%;
   right: 1%;
-  font-family: lora;
 }
 
 
-/*box size with media queries*/
+/*box size with media queries
+
+@media(min-width: 700px) {
+  .content {
+    padding: 0 4em; 
+  }
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
 
 @media screen and (min-width: 524px) and (max-width: 700px){
   .boxUno{
@@ -428,4 +453,4 @@ background: #AB3053;
     left: 1%;
   }
 }
-
+*/
