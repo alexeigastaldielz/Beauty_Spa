@@ -73,7 +73,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color:#FCA9B4;/*dfgdhfdhgdf*/
+  background-color:#030303;/*dfgdhfdhgdf*/
 }
 
 .hamburger {
@@ -282,8 +282,8 @@ ul {
   }
 }/*FIN DE CSS PARA FORMULARIO*/
 .tamañologo{
-  width: 50%;
-  height: 50%;
+  max-width: 40%;
+  min-height: 30%;
 }
 
 .imagesposition{
@@ -293,6 +293,11 @@ ul {
   margin-top: 10%;
   padding: 3%;
   
+}
+
+.tamañosredes{
+  min-width: 3%;
+  max-width: 5%;
 }
 
 .redesposition{
