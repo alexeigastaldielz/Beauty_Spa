@@ -37,7 +37,7 @@ a {
   font-family: 'Lora', serif;
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar {
@@ -100,7 +100,7 @@ a {
   color: #AB3053;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .nav-menu {
       position: fixed;
       z-index: 1;
@@ -303,10 +303,15 @@ height: 70px;
 background-color: #FC5162;
 color: antiquewhite;
 padding: 10px;
+z-index: 1;
 }
 
 /* Box styles */
+
+  
+
 .myBox {
+  position: relative;
 width: 600px;
 height: 400px; 
 margin-left: auto;
@@ -376,81 +381,27 @@ background: #AB3053;
 }
 
 
-/*box size with media queries
 
-@media(min-width: 700px) {
-  .content {
-    padding: 0 4em; 
-  }
-  .contact-wrapper {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-  }
-  .contact-wrapper > * {
-      padding: 2em;
-  }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-      text-align: left;
-  }
-}
 
 @media screen and (min-width: 524px) and (max-width: 700px){
-  .boxUno{
-    width: 150px;
-    left: 180px;
-  }
-
-  #boxUnoFont{
-    font-size: 45px;
-  }
 
   .myBox{
-    width: 500px;
+    width: 400px;
   }
 }
 
-@media screen and (min-width: 477px) and (max-width: 520px){
-  .boxUno{
-    width: 140px;
-    left: 170px;
-  }
+@media screen and (max-width: 620px){
 
-  #boxUnoFont{
-    font-size: 40px;
-  }
 
   .myBox{
-    width: 450px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 360px){
+
+
+  .myBox{
+    width: 200px;
   }
 }
 
-@media screen and (max-width: 475px){
-  .boxUno{
-    width: 140px;
-    left: 80px;
-  }
-
-  #boxUnoFont{
-    font-size: 40px;
-  }
-
-  .myBox{
-    width: 290px;
-  }
-
-  .footer{
-    height: 100px;
-  }
-
-  .footerText {
-    top: 20px;
-  }
-
-  .footerTextDrcha{
-    top: 50px;
-    left: 1%;
-  }
-}
-*/
