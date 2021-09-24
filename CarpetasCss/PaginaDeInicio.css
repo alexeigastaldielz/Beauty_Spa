@@ -1,14 +1,8 @@
 .borde{
   border: 3px black solid;
 }
-.tamañoimagenes{
-  max-width: 200px;
-  min-width: 100px;
-}
+
 .seccion1{
   margin-top: 3;
 }
-.hola img{
-  max-height: 300px;
-  min-height: 300px;
-}
+
