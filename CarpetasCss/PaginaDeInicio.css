@@ -1,14 +1,10 @@
 .borde{
   border: 3px black solid;
 }
-
 .tamañoimagenes{
   max-width: 200px;
-  max-height: 200px;
   min-width: 100px;
-  min-height: 100px;
 }
-
 .seccion1{
-  margin-top: 3%;
+  margin-top: 3;
 }
