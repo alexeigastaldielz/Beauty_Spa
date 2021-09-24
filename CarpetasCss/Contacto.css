@@ -153,7 +153,7 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }
 }
-
+/*INICIO DE CSS PARA FORMULARIO*/
 body {
   background: #FCA9B4
   ;
@@ -273,7 +273,7 @@ ul {
   .contact-info p {
       text-align: left;
   }
-}
+}/*FIN DE CSS PARA FORMULARIO*/
 .tamañologo{
   width: 50%;
   height: 50%;
