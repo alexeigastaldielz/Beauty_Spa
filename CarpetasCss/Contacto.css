@@ -7,7 +7,14 @@
 /*.nav-link{
   color: #FADA5E;
 }*/
-
+body {
+  background: #FCA9B4
+  ;
+  color: #fff;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0 ;
+}
 .titulo{
   text-align: center;
   color: #FADA5E;
@@ -66,7 +73,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #101010;
+  background-color:#FCA9B4;/*dfgdhfdhgdf*/
 }
 
 .hamburger {
@@ -154,7 +161,7 @@ a {
 }
 }
 /*INICIO DE CSS PARA FORMULARIO*/
-body {
+.content {
   background: #FCA9B4
   ;
   color: #fff;
@@ -258,8 +265,8 @@ ul {
 
 /* LARGE SIZE */
 @media(min-width: 700px) {
-  body {
-      padding: 0 4em;
+  .content {
+    padding: 0 4em; 
   }
   .contact-wrapper {
       display: grid;
