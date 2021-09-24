@@ -12,7 +12,7 @@ function sendMail(){
   
    var contactParams ={
      from_name: fullName,
-     from_email: userEmail,
+     to_email: userEmail,
      message : userMessage
    };
 
