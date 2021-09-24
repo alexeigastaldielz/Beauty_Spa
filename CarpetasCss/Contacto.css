@@ -283,8 +283,8 @@ ul {
   }
 }/*FIN DE CSS PARA FORMULARIO*/
 .tamañologo{
-  max-width: 40%;
-  min-height: 30%;
+  max-width: 300px;
+  min-height: 100px;
 }
 /****************************TAMAÑOS LOGOS CONTATO IVAR*********************************************/
 .imagesposition{
@@ -297,8 +297,8 @@ ul {
 }
 
 .tamañosredes{
-  min-width: 3%;
-  max-width: 5%;
+  min-width: 10px;
+  max-width: 50px;
 }
 
 .redesposition{
