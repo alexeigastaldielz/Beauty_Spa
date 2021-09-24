@@ -3,6 +3,10 @@
 }
 
 .seccion1{
-  margin-top: 3;
+  margin-top: 3%;
 }
 
+.tamañocarrusel{
+  max-width: 500px;
+  max-height: 500px;
+}
