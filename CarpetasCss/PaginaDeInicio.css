@@ -6,7 +6,10 @@
   margin-top: 3%;
 }
 
-.tamañocarrusel{
-  max-width: 500px;
-  max-height: 500px;
+.cont{
+  border-radius: 50%;
+  width: 75%;
+  margin: auto;
+  background-color: #FCA9B4;
+  color: white;
 }
