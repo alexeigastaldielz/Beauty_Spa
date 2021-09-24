@@ -8,3 +8,7 @@
 .seccion1{
   margin-top: 3;
 }
+.hola img{
+  max-height: 300px;
+  min-height: 300px;
+}
