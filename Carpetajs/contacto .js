@@ -22,10 +22,10 @@ function sendMail() {
   return true;
 }
 
-function envi() {
+setTimeout( function envi() {
   
   window.location.reload();
-}
+},2000);
 
 //Código para la NavBar
 
