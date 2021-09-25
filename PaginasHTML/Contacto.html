@@ -100,13 +100,13 @@
 
     <div class="contact-wrapper animated bounceInUp">
         <div class="contacts-form">
-            <form method="POST" class="contact-form">
+            <form onsubmit="setTimeout(function () { window.location.reload(); }, 30)" method="POST" class="contact-form">
                 <p>
-                    <label>Nombre completo</label>
+                    <label for="name">Nombre completo</label>
                     <input type="text" id="name"  placeholder="Enter to name" >
                 </p>
                 <p>
-                    <label  for= "">Correo electrónico</label>
+                    <label  for="email">Correo electrónico</label>
                     <input type="text" id="email"  placeholder="Enter to email" >
                 </p>
             
@@ -120,8 +120,10 @@
                 </textarea>
             </p>
                 <p class="block">
-                    <button onclick='sendMail()' type="button"  >Send </button>
+                  <button class ="button"><input type="submit" value="Enviar" onclick='sendMail();'></button>
                 </p>
+
+
             </form>
         </div>
         
@@ -154,7 +156,7 @@
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script type="text/javascript" src="/Carpetajs/contacto .js"></script>
+<script type="text/javascript" src="/Carpetajs/contacto.js"></script>
 </script>
   </body>
 </html>

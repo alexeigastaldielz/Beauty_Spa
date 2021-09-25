@@ -5,7 +5,6 @@
   })();
 
 function sendMail(){
- 
    let fullName = document.getElementById("name").value;
    let userEmail = document.getElementById("email").value;
    let userMessage = document.getElementById("message").value;
@@ -15,8 +14,7 @@ function sendMail(){
      from_email: userEmail,
      message : userMessage
    };
-
-  emailjs.send("service_l8t7c6q","template_74px0yb", contactParams).then (function(res){})
+  emailjs.send("service_l8t7c6q","template_74px0yb", contactParams).then (function(res){}) 
 }
 
 //Código para la NavBar
