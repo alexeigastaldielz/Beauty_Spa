@@ -11,9 +11,8 @@
   padding: 5%;
 }
 .cont{
-  border-radius: 50%;
-  width: 75%;
+  width: 100%;
   margin: auto;
-  background-color: #FCA9B4;
-  color: white;
+  /*background-color: #FCA9B4;
+  color: white;*/
 }
