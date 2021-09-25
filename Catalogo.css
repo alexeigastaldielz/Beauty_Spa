@@ -30,3 +30,11 @@
 .botonreservar{
 padding: 0%;
 }
+
+.global{
+  height: 95px;
+	width: 200px;
+	border: 1px solid gray;
+	background: white;
+	overflow-y: scroll;
+}
