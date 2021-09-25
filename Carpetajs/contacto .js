@@ -23,6 +23,7 @@ function sendMail() {
 }
 
 function envi() {
+  window.location.reload0;
   window.location.reload();
 }
 
