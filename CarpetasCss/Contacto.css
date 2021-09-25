@@ -293,6 +293,11 @@ ul {
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap");
 
 .boxUno{
+  box-shadow: 0 0 20px;
+  color: #634646;
+}
+
+.boxUno{
 position: relative;
 margin-left: auto;
 margin-right: auto;
@@ -301,14 +306,12 @@ border-radius: 10px;
 width: 165px;
 height: 70px;
 background-color: #FC5162;
-color: antiquewhite;
 padding: 10px;
 z-index: 1;
 }
 
-/* Box styles */
 
-  
+/* Box styles */
 
 .myBox {
   position: relative;
@@ -326,10 +329,16 @@ padding-top: 40px;
 overflow: scroll;
 }
 
+.myBox{
+  box-shadow: 0 0 20px;
+  color: #634646;
+}
+
 #boxUnoFont{
   font-family: 'Shippori Mincho', serif;
   font-size: 35px;
   text-align: center;
+  color: antiquewhite;
 }
 
 #myBoxFont{
