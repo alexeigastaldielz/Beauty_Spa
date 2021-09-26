@@ -33,8 +33,10 @@ padding: 0%;
 }
 
 .global{
-  height: 95px;
-	width: 200px;
+  max-height: 95px;
+  min-height: 40px;
+	max-width: 200px;
+  min-width: 60px;
 	border: 1px solid gray;
 	background: white;
 	overflow-y: scroll;
