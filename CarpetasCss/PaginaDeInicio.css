@@ -1,18 +1,33 @@
 .borde{
-  border: 3px black solid;
+  border: 10px black solid;
 }
 
 .seccion1{
-  margin-top: 10%;
-  padding: 5%;
+  margin: 2%;
+  padding: 2%;
 }
 
 .seccion2{
-  padding: 5%;
+  margin: 2%;
+  padding: 2%;
 }
 .cont{
   width: 100%;
   margin: auto;
   /*background-color: #FCA9B4;
   color: white;*/
+}
+
+.formatocartaparrafo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EspacioCartaEntreTexto{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.ColorBoton{
+  background-color:white;
+  border: 3px #FFCCD3 solid;
 }
