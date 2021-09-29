@@ -17,7 +17,6 @@ html, body{
 .container{
   background: #FFF4F8;
   color: #644747; 
-  
   display: grid;
   grid-template-rows: 60px auto 200px;
 }
@@ -27,252 +26,137 @@ html, body{
   background:#FDAAB5;
   display: grid; 
 }
+
 /* ingresar codigo de login/signin */
-
-/* engloba contenido */
 .wrapper{
-  grid-row: 2;
-  background:#FFF4F8;
-  display: grid; 
+  grid-row: 2; 
+  text-align: center;
   place-items: center;
-  padding: 35px;
-  max-width: 470px;
-  overflow: hidden;
   place-self: stretch center;
-  
-  background-color: #FFF4F8;
+  width: 300px;
 }
-
 .logo{
+  margin-top: 30px;
   margin-bottom: 25px;
-}
-
-
-/* botones de login y signup */
-.wrapper .slide-controls{
-  position: relative;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  overflow: hidden;
-  margin: 30px 0 10px 0;
-  justify-content: space-between;
-  border: 1px solid #AA3053;
-  background-color: white;
-  border-radius: 30px;
-}
-.slide-controls .slide{
-  height: 100%;
-  width: 100%;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
   text-align: center;
-  line-height: 48px;
-  cursor: pointer;
-  z-index: 1;
-  transition: all 0.6s ease;
 }
-.slide-controls label.signup{/* mientras uno es blanco el otro es negro */
-  color: #000;
+.titulo{
+  border-bottom: 10px;
 }
-.slide-controls .slider-tab{ /* fondo boton */
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  left: 0;
-  z-index: 0;
-  border-radius: 5px;
-  background: #AA3053  ;
-  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
-  border-radius: 30px;
-}
-/* mueve contenido de login */
-input[type="radio"]{ 
-  display: none;
-}
-#signup:checked ~ .slider-tab{
-  left: 50%;
-}
-#signup:checked ~ label.signup{
-  color: white;
-  cursor: default;
-  user-select: none;
-}
-#signup:checked ~ label.login{
-  color: #000;
-}
-#login:checked ~ label.signup{
-  color: #000;
-}
-#login:checked ~ label.login{
-  cursor: default;
-  user-select: none;
-}
-.wrapper .form-container{
+.form input{
+  margin-top: 10px;
+  font-size: 15px;
   width: 100%;
-  overflow: hidden;
 }
-.form-container .form-inner{
-  display: flex;
-  width: 200%;
-}
-.form-container .form-inner form{
-  width: 50%;
-  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
-}
-/* formato tablas */
-.form-inner form .field{
-  height: 50px;
-  width: 100%;
+.field{
   margin-top: 5px;
-}
-.form-inner form .first{
-  margin-top: 25px;
-}
-.form-inner form .field input{
-  height: 90%;
   width: 100%;
-  outline: none;
-  padding-left: 15px;
-  border-radius: 5px;
-  /* border: 1px solid lightgrey; */
-  border: 1px solid #644747;
-  border-bottom-width: 2px;
-  font-size: 17px;
-  transition: all 0.3s ease;
-
+  box-sizing: border-box;
+  margin-bottom: none;
 }
-.form-inner form .field input:focus{
-  border-color: #AA3053;
+.field1{
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.form-inner form .field input::placeholder{
-  color: #999;
-  /* color: #644747; */
-  transition: all 0.3s ease;
-}
-form .field input:focus::placeholder{
-  color: #b3b3b3;
-  /* color: #644747; */
-}
-.form-inner form .pass-link{
-  margin-top: 3px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-
 .eye{
   position: absolute;
   cursor: pointer;
 }
-#hide1{
+#hide1, #hide3, #hide5{
   display: none;
 }
-#hide3{
-  display: none;
-}
-#hide5{
-  display: none;
-}
-.form-inner .field span{
+.form .field1 span{
   position: relative;
-  right: -358px;
-  top: -30px
+  right: -128px;
+  top: -25px
 }
-@media(max-width: 470px){
-  .form-inner .field span{
-    position: relative;
-    right: -300px;
-    top: -30px
-  }
+.pass-link{
+  text-align: right;
+  color: #AA3053;
+  margin-top: 10px;
 }
-@media(max-width: 375px){
-  .form-inner .field span{
-    position: relative;
-    right: -260px;
-    top: -30px
-  }
+.form form .pass-link a{
+  color: #AA3053;
+  text-decoration: none;
+  font-size: small;
+  /* position: relative; */
+  /* top: -24px */
 }
-@media(max-width: 360px){
-  .form-inner .field span{
-    position: relative;
-    right: -250px;
-    top: -30px
-  }
+.form form .signup-link{
+  text-decoration: none;
+  font-size: small;
 }
-@media(max-width: 320px){
-  .form-inner .field span{
-    position: relative;
-    right: -210px;
-    top: -32px
-  }
-  html, body{
-    font-size: 13px;
-  }
-  .slide-controls .slide{
-    font-size: 13px;
-  }
-  .form-inner form .field input{
-    font-size: 13px;
-  }
-  .checkbox{
-    font-size: small;
-  }
+.form form .signup-link a{
+  color: #AA3053;
+  text-decoration: none;
+  font-size: small;
 }
-@media(max-width: 280px){
-  html, body{
-    font-size: small;
-  }
-  .slide-controls .slide{
-    font-size: small;
-  }
-  .form-inner form .field input{
-    font-size: small;
-  }
-  .checkbox{
-    font-size: x-small;
-  }
-  .form-inner .field span{
-    position: relative;
-    right: -170px;
-    top: -32px
-  }
+.form form .pass-link a:hover, .form form .signup-link a:hover{
+  text-decoration: underline;
+}
+.form form .aviso{
+  text-decoration: none;
+  font-size: small;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+/* formato labels */
+.form .field input,.form .field1 input{
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #644747;
+  font-size: 12px;
+  height:30px;
+}
+.form .field input:focus, .form .field1 input:focus{
+  border-color: #AA3053;
+  outline: none;
+}
+form .field input:focus::placeholder, form .field1 input:focus::placeholder{
+  color: #b3b3b3;
+  outline: none;
 }
 
+.checkbox{
+  font-size: small;
+  text-align: left;
+  display: inline;
+  width: 0%;
+  /* position: relative; */
+  margin: 0%;
 
-.divisior{
-  margin-top: 15px;
-  text-align: center;
-  overflow: hidden;
-  text-align: center;
 }
-/* .divisior:before,
-.divisior:after {
-  background-color: #7a7a7a;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-} */
-/* .divisior:before {
-  right: 0.5em;
-  margin-left: -50%;
+.btn, .btn2{
+  cursor: pointer;
 }
-.divisior:after {
-  left: 0.5em;
-  margin-right: -50%;
-} */
-
+form .btn input[type="submit"]{
+  background: #FD5060;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  height: 30px;
+}
+form .btn2 input[type="submit"]{
+  background: #FD5060;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  height: 30px;
+}
 hr{
   background-color: #636262;
   height: 3px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-
 .icon{
   margin-top: 20px;
   margin-bottom: 25px;
@@ -283,69 +167,17 @@ hr{
   margin-right: 20px;
   display: inline;
 }
-
-
-.form-inner form .signup-link{
-  text-align: center;
+.divisior{
+  font-size: 15px;
+}
+.mensaje{
   margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
-.form-inner form .pass-link a,
-.form-inner form .signup-link a{
-  color: #AA3053;
-  text-decoration: none;
+.btn2{
+  margin-top: 15px;
 }
-.form-inner form .pass-link a:hover,
-.form-inner form .signup-link a:hover{
-  text-decoration: underline;
-}
-form .btn{
-  height: 50px;
-  width: 100%;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  
-}
-form .btn .btn-layer{
-  height: 100%;
-  width: 300%;
-  position: absolute;
-  left: -100%;
-  background: #f7a3ac;
-  border-radius: 5px;
-  transition: all 0.4s ease;
-  color: white;
-  cursor: pointer;
-  border: none;
-
-}
-form .btn:disabled {
-  background: gray;
-}
-form .btn:hover .btn-layer{
-  left: 0;
-}
-form .btn input[type="submit"]{
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  position: relative;
-  background: none;
-  border: none;
-  color: #fff;
-  padding-left: 0;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-
-.checkbox{
-  padding-bottom: 10px;
-  text-align: center;
-}
-
 
 
 /* ingresar codigo del contact */
