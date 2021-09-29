@@ -29,6 +29,15 @@
   </a>Ingresar</a>
   </div>
 
+  <div class="form-container"><!-- Botones de login y signup -->
+    <div class="slide-controls">
+    <input type="radio" name="slide" id="login" checked>
+    <input type="radio" name="slide" id="signup">
+    <label for="login" class="slide login">Ingresar</label>
+    <label for="signup" class="slide signup">Registrarse</label>
+    <div class="slider-tab"></div>
+  </div>
+
     <div class="form-inner">
       <form action="#" class="login"><!-- contenido de login -->
         <div class="field first">
@@ -84,10 +93,51 @@
         ¿No tienes cuenta? <a href="">Crear cuenta</a>
         </div>
       </form>
+      <form action="#" class="signup"><!-- contenido de signup -->
+        <div class="field first">
+        <input type="text" placeholder="Nombre" required>
+        </div>
+        <div class="field">
+        <input type="text" placeholder="Apellido" required>
+        </div>
+        <div class="field">
+        <input type="text" placeholder="Inserte su email" required>
+        </div>
+        <div class="field">
+          <input type="password" id="myInput2" placeholder="Contraseña" required>
+            <Span class="eye" onclick="myFunction2()">
+            <i id="hide3" ><img src="eye_brown.svg" alt=""></i>
+            <i id="hide4" ><img src="eyeslash_gray.svg" alt=""></i>
+            </Span>
+          </div>
+
+          <div class="field">
+            <input type="password" id="myInput3" onkeyup="Habilitar" placeholder="Confirmar contraseña" required>
+              <Span class="eye" onclick="myFunction3()">
+              <i id="hide5" ><img src="eye_brown.svg" alt=""></i>
+              <i id="hide6" ><img src="eyeslash_gray.svg" alt=""></i>
+              </Span>
+            </div>
+
+        <div class="divisior">
+        <a> Registrarse con: </a>
+        </div>
+        <div class="icon">
+        <div class="iconn"><a href="#"></a><img src="google_red.svg" alt=""></a></div>
+        <div class="iconn"><a href="#"></a><img src="facebook_red.svg" alt=""></a></div>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" id="terms" onchange="openSubmit()"><span> Aceptar terminos y condiciones</span>
+        </div>
+        <div class="field btn" id="enter">
+        <div class="btn-layer"></div>
+        <input type="submit" value="Registrarse"> 
+        <!-- <button class="btn-layer" ><img src="Arrow.svg" alt=""></button> -->
+        </div>
+      </form>
     </div>
   </div>
 </div>
-
 
 <!-- ingresar codigo del contact -->
     <div class="footer">
@@ -96,7 +146,6 @@
 
 
     
-
 </div>
 </body>
 </html>
