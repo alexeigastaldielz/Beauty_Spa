@@ -131,7 +131,7 @@ form .field input:focus::placeholder, form .field1 input:focus::placeholder{
   /* position: relative; */
   margin: 0%;
   width: 0px;
-  border-left: 4px;
+
 }
 .btn, .btn2{
   cursor: pointer;
