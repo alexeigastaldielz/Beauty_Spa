@@ -30,21 +30,21 @@
   <a>Ingresar</a>
 </div><!-- box2 -->
 <div class="box3 field">
-  <input type="text" placeholder="Inserte su email" required> 
+  <input type="email" name="emails" multiple placeholder="Inserte su email" required> 
 </div><!-- box3 -->
 <div class="box4 field1">
-  <input type="password" id="myInput" placeholder="Contraseña" required>
+  <input type="password" id="Show" placeholder="Contraseña" required>
 </div><!-- box4 -->
 <div class="box5 pass-link">
   <div class="b51">
-  <input type="checkbox" id="password" onchange="viewpassword()"><span>Mostrar contraseña</span>
+  <input type="checkbox" id="" onclick="viewpassword()">Mostrar contraseña
 </div>
 <div class="b52">
-  <a href="#">¿Olvidaste contraseña? </a>
+  <a href="EnvioEmailRecuperarcuenta.html">¿Olvidaste contraseña? </a>
 </div>
 </div><!-- box5 -->
 <div class="box6 checkbox ">
-  <input type="checkbox" id="terms" onchange="openSubmit()"><span>Permanecer conectado</span>
+  <input type="checkbox" id="terms" onchange="openSubmit()">Permanecer conectado
 </div><!-- box6 -->
 <div class="box7 btn" id="enter">
   <!-- <div class="btn-layer"></div> -->
@@ -64,7 +64,7 @@
 </div><!-- box8 -->
 <div class="box9 text">
   <a>¿No tienes cuenta?</a>
-  <div class="signup-link"> <a href="">Crear cuenta </a></div>
+  <div class="signup-link"> <a href="CrearCuenta.html">Crear cuenta </a></div>
 </div><!-- box9 -->
 </div><!-- content -->
 <!-- ingresar codigo del contact -->
@@ -74,8 +74,16 @@
   </div><!-- grid -->
 </body>
 <!-- display password -->
-<script>
-
+<script type="text/javascript">
+function viewpassword(){
+  var show = document.getElementById('Show')
+    if(show.type =='password'){
+      show.type='text';
+    }
+    else{
+    show.type='password';
+    }
+}
 
 
 
