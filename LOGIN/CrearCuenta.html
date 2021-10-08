@@ -30,13 +30,13 @@
     <a>Crear cuenta de forma gratuita</a>
   </div><!-- box2 -->
   <div class="box3 field">
-    <input type="text" placeholder="Nombre y Apellido" required> 
+    <input type="text" id="InputName" placeholder="Nombre y Apellido" required> 
   </div><!-- box3 -->
   <div class="box4 field1">
-    <input type="tel" placeholder="Telefono" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="Un número de teléfono válido debe tener 3 dígitos, un guión (-) y cuatro dígitos más" required> 
+    <input type="tel" id="InputPhone" placeholder="Telefono" title="Un número de teléfono válido debe tener 10 dígitos" required> 
   </div><!-- box4 -->
   <div class="box5 field2">
-    <input type="email" name="emails" multiple placeholder="Inserte su email" required> 
+    <input type="email" id="InputEmail" name="emails" multiple placeholder="Inserte su email" required> 
   </div><!-- box5 -->
   <div class="box6 field3">
     <input type="password" id="Show" placeholder="Contraseña" required>
@@ -58,7 +58,7 @@
     </div>
   </div><!-- box10 -->
   <div class="box11">
-    <button class="btn-layer" type="submit" >Crear cuenta</button>
+    <button class="btn-layer" id="Crear" type="button" >Crear cuenta</button>
   </div><!-- box11 -->
   <div class="box12">
     <div><hr></div>
@@ -100,4 +100,5 @@
     
     
     </script>
+    <script src="../Carpetajs/addUser.js"></script>
   </html>
