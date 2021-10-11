@@ -26,7 +26,6 @@ function crear(){
 
     // Si las las contraseñas cumplen las condiciones se encriptan con base64
     pass = btoa(pass);
-    pass1 = btoa(pass1);
 
     // Se crea una variable que servira como bandera para saber si un correo ya esta dado de alta
     var corr = false;
@@ -52,7 +51,6 @@ function crear(){
       // Si el correo no esta dado de alta, el objeto se convierte en formato JSON y se guarda en almacenamiento local
       var local = JSON.stringify(user);
       localStorage.setItem(`usuario${j}`, local);
-      console.log('local: ', JSON.parse(local));
       //Se incrementa el contador de usuarios y se actualiza
       j++;
       localStorage.setItem("j", j);
